@@ -1,0 +1,29 @@
+.navbar {
+  padding: 40px 120px;
+}
+
+.logo {
+  height: 35px;   /* Adjust to fit design */
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .logo {
+    height: 28px;
+  }
+}
+
+
+/* ================= TABLET ================= */
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .navbar {
+    padding: 30px 50px;
+  }
+}
