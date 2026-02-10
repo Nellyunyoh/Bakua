@@ -1,24 +1,21 @@
-/* ================= HERO BASE ================= */
+/* ================= HERO ================= */
 
 .hero {
   width: 100%;
+  padding: 90px 0;
   text-align: center;
-  padding: 90px 24px;
 }
 
-/* Main heading */
+/* H1 */
 .hero h1 {
   font-size: 68px;
   font-weight: 800;
 
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin-bottom: 20px;
 
   line-height: 1.1;
 
-  text-align: center;
-
-  white-space: nowrap; /* Keep on one line on big screens */
+  white-space: nowrap;
 }
 
 /* ================= TAGS ================= */
@@ -47,40 +44,28 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
-
   height: 46px;
+  padding: 0 20px;
 
   white-space: nowrap;
 }
 
-/* Desktop tag sizes */
-.monetise {
-  min-width: 220px;
-}
+/* Tag sizes */
+.monetise { min-width: 220px; }
+.gigs { min-width: 150px; }
+.savings { min-width: 200px; }
+.loans { min-width: 170px; }
 
-.gigs {
-  min-width: 150px;
-}
-
-.savings {
-  min-width: 200px;
-}
-
-.loans {
-  min-width: 170px;
-}
-
-/* ================= GET APP TEXT ================= */
+/* ================= GET APP ================= */
 
 .get-app {
   color: gray;
   letter-spacing: 2px;
 
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* ================= STORES ================= */
@@ -92,9 +77,9 @@
 
   gap: 40px;
 
-  margin-bottom: 2px;
+  margin-bottom: 60px;
 
-  flex-wrap: nowrap; /* Always stay in a row */
+  flex-wrap: nowrap;
 }
 
 .store-logo {
@@ -102,7 +87,6 @@
   height: auto;
 
   cursor: pointer;
-
   transition: transform 0.2s ease;
 }
 
@@ -110,24 +94,37 @@
   transform: scale(1.05);
 }
 
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+    font-size: 48px;
+    white-space: normal;
+  }
+
+  .tag {
+    font-size: 16px;
+    height: 42px;
+  }
+
+  .store-logo {
+    width: 170px;
+  }
+}
+
 /* ================= MOBILE ================= */
 
 @media (max-width: 600px) {
 
   .hero {
-    padding: 60px 16px;
+    padding: 60px 0;
   }
 
   .hero h1 {
     font-size: 34px;
     line-height: 1.25;
-
-    white-space: normal; /* Allow wrapping */
-  }
-
-  .tags {
-    gap: 12px;
-    margin-bottom: 35px;
+    white-space: normal;
   }
 
   .tag {
@@ -149,47 +146,5 @@
 
   .store-logo {
     width: 140px;
-  }
-}
-
-/* ================= TABLET ================= */
-
-@media (min-width: 601px) and (max-width: 900px) {
-
-  .hero h1 {
-    font-size: 48px;
-    line-height: 1.2;
-
-    white-space: normal; /* Allow wrapping */
-  }
-
-  .tags {
-    gap: 16px;
-  }
-
-  .tag {
-    font-size: 16px;
-    height: 42px;
-  }
-
-  .stores {
-    gap: 28px;
-  }
-
-  .store-logo {
-    width: 170px;
-  }
-}
-
-/* ================= LARGE DESKTOP ================= */
-
-@media (min-width: 1200px) {
-
-  .hero h1 {
-    font-size: 72px; /* Slightly bigger on large screens */
-  }
-
-  .stores {
-    gap: 50px;
   }
 }

@@ -4,26 +4,38 @@ function Hero() {
   return (
     <section className="hero">
 
-      <h1>Empowering Creators to Earn More</h1>
+      <div className="container">
 
-     <div className="tags">
-  <span className="tag monetise">Monetise</span>
-  <span className="tag gigs">Gigs</span>
-  <span className="tag savings">Savings</span>
-  <span className="tag loans">Loans</span>
-</div>
+        <h1>Empowering Creators to Earn More</h1>
 
+        <div className="tags">
 
-      <p className="get-app">GET THE APP</p>
+          <span className="tag monetise">Monetise</span>
+          <span className="tag gigs">Gigs</span>
+          <span className="tag savings">Savings</span>
+          <span className="tag loans">Loans</span>
 
-     <div className="stores">
+        </div>
 
-        <img src="/google-play.png" alt="App Store" className="store-logo" />
-        <img src="/appstore.png" alt="Play Store" className="store-logo" />
- 
+        <p className="get-app">GET THE APP</p>
 
-</div>
+        <div className="stores">
 
+          <img
+            src="/google-play.png"
+            alt="Google Play"
+            className="store-logo"
+          />
+
+          <img
+            src="/appstore.png"
+            alt="App Store"
+            className="store-logo"
+          />
+
+        </div>
+
+      </div>
 
     </section>
   );
