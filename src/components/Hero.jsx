@@ -6,7 +6,7 @@ function Hero() {
 
       <div className="container">
 
-        <h1>Empowering Creators to Earn More</h1>
+        <h1>Empowering Creator to Earn More</h1>
 
         <div className="tags">
 
