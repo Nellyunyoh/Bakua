@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="hero">
 
-      <h1>Empowering creators to Earn More</h1>
+      <h1>Empowering Creators to Earn More</h1>
 
      <div className="tags">
   <span className="tag monetise">Monetise</span>
